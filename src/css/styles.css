@@ -1,0 +1,43 @@
+/*
+    BACKGROUND ANIMATION
+*/
+.main-bg-animated {
+    background: linear-gradient(90deg, #400101, #260101, #BF0B0B, #730C02);
+    background-size: 300% 300%;
+    animation: colors 18s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+    NAVBAR STYLES
+*/
+.logo-icon {
+    width: 60px;
+}
+
+.navbar-background {
+    background-color: #222222;
+}
+
+a.navbar-item {
+    &:hover {
+        color: #ffdcba9c;
+    }
+    &:visited {
+        color: #FFDDBA;
+    }
+    color: #FFDDBA;
+}
