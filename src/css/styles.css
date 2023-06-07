@@ -32,12 +32,59 @@
     background-color: #222222;
 }
 
+a.navbar-item,
 a.navbar-item {
+    color: #FFDDBA;
+
     &:hover {
         color: #ffdcba9c;
     }
+
+    ;
+
     &:visited {
         color: #FFDDBA;
     }
+
+    ;
+}
+
+a.navbar-item:hover {
+    color: #ffdcba8f;
+}
+
+a.button-navbar {
+    border: 1px solid white;
     color: #FFDDBA;
+}
+
+a.button-navbar:hover {
+    background-color: #FFDDBA;
+    color: black;
+    border: 1px solid #FFDDBA;
+}
+
+/*
+    MAIN CONTENT
+*/
+p.text {
+    color: #FFDDBA;
+}
+h2.titles {
+    color: #FFDDBA;
+}
+
+h4.titles {
+    color: #FFDDBA;
+
+}
+
+div.card-of-contacts {
+    background-color: rgba(34, 34, 34, 0);
+    color: #FFDDBA;
+    border: 0px;
+}
+
+div.container-sobre-nos {
+    border-top: 1px solid #fff;
 }

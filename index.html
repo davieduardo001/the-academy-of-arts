@@ -2,48 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+  <title>Document</title>
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- CSS links -->
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
 </head>
 
 <body class="main-bg-animated">
 
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-background">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <a class="nav-link active mx-auto navbar-item" aria-current="page" href="#">Home</a>
-              <a class="navbar-brand mx-auto" href="#"><img src="./src/imgs/logo.png" class="logo-icon" alt="logo"></a>
-              <a class="nav-link navbar-icon mx-auto navbar-item"  href="#">Link</a>
-          </div>
-        </div>
-      </nav>
 
-    <!-- JS links -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-background justify-content-center mb-5">
+    <div class="container-fluid">
+      <!-- botão hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- conteudo navbar -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="nav-link active mx-auto navbar-item" aria-current="page" href="./index.html">Home</a>
+
+        <a class="navbar-brand" href="./index.html"><img src="./src/imgs/logo.png" class="logo-icon" alt="logo"></a>
+
+        <a class="nav-link navbar-icon mx-auto navbar-item" href="./src/pages/inspiracoes.html">Inspirações</a>
+
+        <a type="button" href="#sobreNos" class="btn btn-outline-danger mr-2 button-navbar">Sobre nós</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="container" style="height: 500px;">
+    <div class="row">
+      <div class="col-6 px-2">
+        <img src="./src/imgs/img.jpg" class="m-0" style="width: 100%; border-radius: 20px;" />
+      </div>
+
+      <div class="col-6">
+        <h2 class="titles">Sobre a Academia</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto asperiores voluptas nihil illo harum,
+          vero ut sapiente at quisquam quo atque ratione neque adipisci cumque est blanditiis dicta eligendi modi soluta
+          accusantium cum? Corporis aspernatur reiciendis excepturi voluptate iusto nulla architecto, adipisci
+          recusandae itaque, consectetur accusantium atque. Rerum totam alias esse dolore earum veritatis dolor
+          obcaecati delectus reiciendis et explicabo eaque, placeat ipsam temporibus nisi optio, tempore id! Vel
+          explicabo dolor possimus aut omnis temporibus voluptates ad, pariatur ducimus numquam ab rem obcaecati ullam
+          placeat aspernatur dicta laboriosam aperiam reprehenderit cupiditate. Nobis recusandae deleniti quis, quos
+          iusto maxime ducimus.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOBRE NÓS -->
+  <div class="container-fluid pt-3 container-sobre-nos">
+
+    <!-- conteudo -->
+    <div class="row">
+      <!-- mapa -->
+      <div class="col p-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1919.6097322230637!2d-47.881407507940686!3d-15.792377800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bf6a097411b%3A0x5f482b73e4efb26c!2sTeatro%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1685829077077!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border: 0; margin: 0; border-radius: 0px 20px 20px 0px;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- conteudo a direita -->
+      <div class="col-12 col-md-6">
+        <h2 class="my-3 titles" id="sobreNos">Sobre nós</h2>
+        <h4 class="card-title titles">Contatos:</h4>
+        <p class="text">
+          <span>Telefone: (11) 99999-9999</span>
+          <br>
+          <span>Email: teste@teste.com</span>
+          <br>
+          <span>Endereço: SCTS - Brasília, DF, 70297-400</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
